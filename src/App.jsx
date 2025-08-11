@@ -6,6 +6,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 
  AOS.init({ duration: 1000})
 
@@ -30,7 +32,14 @@ function App() {
         <section>
           <Projects></Projects>
         </section>
+        <section>
+          <Contact></Contact>
+        </section>
       </main>
+
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   )
 }

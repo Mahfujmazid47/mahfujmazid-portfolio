@@ -10,5 +10,7 @@
 - npm install aos
 - npm install react-icons --save
 - npm i react-responsive-carousel
+- npm install emailjs-com
+- npm install sweetalert2
 - 
 

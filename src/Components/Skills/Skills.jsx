@@ -55,7 +55,7 @@ const skills = [
   },
   {
     name: "JWT",
-    icon: <SiJsonwebtokens />
+    icon: <SiJsonwebtokens className="text-[#00A3D9]" />
   },
   {
     name: "stripe",
@@ -65,12 +65,14 @@ const skills = [
 
 const SkillCard = ({ skill }) => {
   return (
-    <div
-      data-aos="zoom-in"
-      className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform duration-300 cursor-pointer"
-    >
-      <div className="text-6xl">{skill.icon}</div>
-      <h3 className="text-xl font-semibold text-gray-800">{skill.name}</h3>
+    <div data-aos="zoom-in">
+      <div
+
+        className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform duration-300 cursor-pointer"
+      >
+        <div className="text-6xl">{skill.icon}</div>
+        <h3 className="text-xl font-semibold text-gray-800">{skill.name}</h3>
+      </div>
     </div>
   );
 };
