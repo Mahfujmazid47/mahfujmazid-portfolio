@@ -5,32 +5,32 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <Link to="home" smooth={true} duration={500} spy={true} offset={-70}>
+        <Link to="home" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           Home
         </Link>
       </li>
       <li>
-        <Link to="about" smooth={true} duration={500} spy={true} offset={-70}>
+        <Link to="about" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           About
         </Link>
       </li>
       <li>
-        <Link to="skills" smooth={true} duration={500} spy={true} offset={-70}>
+        <Link to="skills" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           Skills
         </Link>
       </li>
       <li>
-        <Link to="projects" smooth={true} duration={500} spy={true} offset={-70}>
+        <Link to="projects" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           Projects
         </Link>
       </li>
       <li>
-        <Link to="experience" smooth={true} duration={500} spy={true} offset={-70}>
+        <Link to="experience" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           Experience
         </Link>
       </li>
       <li>
-        <Link to="contact" smooth={true} duration={500} spy={true} offset={-70}>
+        <Link to="contact" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           Contact
         </Link>
       </li>
@@ -98,7 +98,7 @@ const Navbar = () => {
           href="/cv.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn text-white bg-gradient-to-r from-sky-400 to-blue-600"
+          className="btn text-white  bg-gradient-to-r from-sky-400 to-blue-600"
         >
           Download CV
         </a>
