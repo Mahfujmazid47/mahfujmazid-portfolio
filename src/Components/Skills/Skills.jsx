@@ -54,7 +54,7 @@ const skills = [
     icon: <FaGitAlt className="text-[#F05032]" />,
   },
   {
-    name: "JWT Authentication",
+    name: "JWT",
     icon: <SiJsonwebtokens />
   },
   {
@@ -84,11 +84,11 @@ const Skills = () => {
       className="bg-gradient-to-r from-primary/5 to-secondary/5 py-20 px-6 lg:px-20"
     >
       <div className="max-w-6xl mx-auto text-center mb-12">
-        <h2 className="text-4xl font-bold text-blue-600 mb-2" data-aos="fade-down">
+        <h2 className="text-4xl font-bold text-blue-600 mb-2" data-aos="fade-up">
           My Skills
         </h2>
         <p
-          className="text-gray-600 max-w-2xl mx-auto"
+          className="max-w-2xl mx-auto py-2"
           data-aos="fade-up"
           data-aos-delay="200"
         >

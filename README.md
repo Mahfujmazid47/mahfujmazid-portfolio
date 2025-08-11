@@ -9,5 +9,6 @@
 - npm install react-scroll
 - npm install aos
 - npm install react-icons --save
+- npm i react-responsive-carousel
 - 
 
