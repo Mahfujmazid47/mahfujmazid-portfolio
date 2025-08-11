@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll"; // smooth scroll এর জন্য react-scroll
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const links = (
@@ -24,11 +24,11 @@ const Navbar = () => {
           Projects
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link to="experience" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           Experience
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link to="contact" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           Contact
@@ -38,7 +38,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm fixed top-0 z-50 raleway-font">
+    <div className="navbar lg:px-46 bg-base-100 shadow-sm shadow-primary/35 fixed top-0 z-50 raleway-font bg-gradient-to-r from-primary/9 to-secondary/9">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -98,7 +98,7 @@ const Navbar = () => {
           href="/cv.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn text-white  bg-gradient-to-r from-sky-400 to-blue-600"
+          className="btn text-white bg-gradient-to-r from-sky-400 to-blue-600"
         >
           Download CV
         </a>

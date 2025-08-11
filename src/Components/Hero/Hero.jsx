@@ -14,11 +14,11 @@ const Hero = () => {
             Hi, I'm <span className="text-secondary">Mahfuj Mazid</span> 👋
           </h1>
           <h2 data-aos="fade-up"
-          data-aos-delay="200" className="text-xl lg:text-2xl font-semibold  mb-4">
+          data-aos-delay="100" className="text-xl lg:text-2xl font-semibold  mb-4">
             Full Stack Developer
           </h2>
           <p data-aos="fade-up"
-          data-aos-delay="400" className="leading-relaxed mb-6">
+          data-aos-delay="200" className="leading-relaxed mb-6">
             I specialize in building modern, scalable, and visually appealing web
             applications. My passion lies in delivering high-quality products with
             clean code, smooth performance, and engaging user experiences.
@@ -26,7 +26,7 @@ const Hero = () => {
 
           {/* Social Links */}
           <div data-aos="fade-up"
-          data-aos-delay="600" className="flex items-center gap-4 mb-6">
+          data-aos-delay="300" className="flex items-center gap-4 mb-6">
             <a
               href="https://github.com/Mahfujmazid47"
               target="_blank"
@@ -48,7 +48,7 @@ const Hero = () => {
 
           {/* Resume Button */}
           <a data-aos="fade-up"
-          data-aos-delay="800"
+          data-aos-delay="400"
             href="/resume.pdf"
             download
             className="btn bg-gradient-to-r from-sky-400 to-blue-600 md:w-4/12 flex items-center gap-2 text-white hover:scale-105 transition-transform"
@@ -66,7 +66,7 @@ const Hero = () => {
               className="rounded-full md:h-[500px] object-center border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
             />
             <div data-aos="fade-up"
-          data-aos-delay="600" className="absolute -bottom-4 -right-4 bg-gradient-to-r from-sky-400 to-blue-600 text-white px-4 py-2 rounded-full shadow-md text-sm font-semibold">
+          data-aos-delay="300" className="absolute -bottom-4 -right-4 bg-gradient-to-r from-sky-400 to-blue-600 text-white px-4 py-2 rounded-full shadow-md text-sm font-semibold">
               Available for Hire
             </div>
           </div>
