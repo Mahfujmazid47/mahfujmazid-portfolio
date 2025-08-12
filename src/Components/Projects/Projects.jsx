@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaArrowLeft, FaArrowRight, FaReact, FaJs, FaNodeJs, FaStripe } from "react-icons/fa";
 import { SiFirebase, SiMongodb, SiExpress, SiReactrouter, SiJsonwebtokens } from "react-icons/si";
 import { Link } from "react-router";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 
 // Project data
@@ -103,8 +104,8 @@ const Projects = () => {
               <div className="lg:w-1/2 space-y-4">
                 <h3 className="text-6xl font-bold text-blue-500">{project.id}</h3>
                 <h4 className="text-3xl font-bold">{project.name}</h4>
-                <p className="leading-relaxed">{project.description}</p>
-
+                {/* <p className="leading-relaxed">{project.description}</p> */}
+                    <p className="text-xl font-semibold mb-3">Tech Stack:</p>
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-3 mt-4">
                   {project.tech.map((t, idx) => (
@@ -120,7 +121,7 @@ const Projects = () => {
 
                 {/* Buttons */}
                 <div className="flex gap-4 mt-6">
-                  <a
+                  {/* <a
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -135,12 +136,12 @@ const Projects = () => {
                     className="btn button btn-outline hover:text-white hover:bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg hover:scale-105 text-blue-500 transition-transform"
                   >
                     GitHub
-                  </a>
+                  </a> */}
                   <Link
                     to={`/project_details/${project.id}`}
-                    className="btn button btn-outline hover:text-white hover:bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg hover:scale-105 text-blue-500 transition-transform"
+                    className="btn button text-white bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg hover:scale-105  transition-transform"
                   >
-                    View Details
+                    View Details <FaArrowRightLong />
                   </Link>
                 </div>
               </div>

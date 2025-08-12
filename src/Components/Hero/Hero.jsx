@@ -5,7 +5,7 @@ import { HiDownload } from "react-icons/hi";
 const Hero = () => {
   return (
     <section id="home" className="bg-gradient-to-r from-primary/5 to-secondary/5 py-24 px-6 lg:px-20">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
 
         {/* Left Content */}
         <div>
@@ -82,12 +82,11 @@ const Hero = () => {
         <div className="flex justify-center" data-aos="fade-up">
           <div className="relative">
             <img
-              src="https://i.ibb.co.com/4gDmtzQy/1735497226692-2.jpg"
+              src="https://i.ibb.co.com/0pzT96c3/small-size-profile-pic.jpg"
               alt="Profile"
               className="rounded-full md:h-[500px] object-center border-4 border-white shadow-lg hover:scale-105 transition-transform duration-300"
             />
-            <div data-aos="fade-up"
-          data-aos-delay="300" className="absolute -bottom-4 -right-4 bg-gradient-to-r from-sky-400 to-blue-600 text-white px-4 py-2 rounded-full shadow-md text-sm font-semibold">
+            <div data-aos="fade-up"className="absolute button -bottom-4 -right-4 bg-gradient-to-r from-sky-400 to-blue-600 text-white px-4 py-2 rounded-full shadow-md text-sm font-semibold">
               Available for Hire
             </div>
           </div>

@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { FaArrowLeft, FaArrowRight, FaReact, FaJs, FaNodeJs, FaStripe, FaChevronUp, FaChevronDown } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaReact, FaJs, FaNodeJs, FaStripe, FaChevronUp, FaChevronDown, FaGithub } from "react-icons/fa";
 import { SiFirebase, SiMongodb, SiExpress, SiReactrouter, SiJsonwebtokens } from "react-icons/si";
 import { useParams, Link } from "react-router";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const projects = [
     {
@@ -12,15 +13,15 @@ const projects = [
         description:
             "A Medical Camp Management System (MCMS) using the MERN stack. This system helps the Organizer, and Participants easily manage and coordinate medical camps.",
         tech: [
-            { name: "React", icon: <FaReact /> },
-            { name: "JavaScript", icon: <FaJs /> },
-            { name: "Node.js", icon: <FaNodeJs /> },
-            { name: "Express.js", icon: <SiExpress /> },
-            { name: "MongoDB", icon: <SiMongodb /> },
-            { name: "Firebase", icon: <SiFirebase /> },
-            { name: "JWT", icon: <SiJsonwebtokens /> },
-            { name: "Stripe", icon: <FaStripe /> },
-            { name: "React Router", icon: <SiReactrouter /> },
+            { name: "React", icon: <FaReact />, color: "text-[#61DAFB]" },
+            { name: "JavaScript", icon: <FaJs />, color: "text-[#F7DF1E]" },
+            { name: "Node.js", icon: <FaNodeJs />, color: "text-[#339933]" },
+            { name: "Express.js", icon: <SiExpress />, color: "" },
+            { name: "MongoDB", icon: <SiMongodb />, color: "text-[#47A248]" },
+            { name: "Firebase", icon: <SiFirebase />, color: "text-[#FFCA28]" },
+            { name: "JWT", icon: <SiJsonwebtokens />, color: "text-[#00A3D9]" },
+            { name: "Stripe", icon: <FaStripe  />, color: "text-[#635BFF]" },
+            { name: "React Router", icon: <SiReactrouter />, color: "text-[#CA4245]" },
         ],
         liveLink: "https://b11a12-medicamp-site.web.app",
         githubLink: "https://github.com/Mahfujmazid47/medicamp_project",
@@ -46,14 +47,14 @@ const projects = [
         description:
             "This Lost and Found Website is a full-stack platform designed to help users report lost items and browse found items. The project provides practical experience with key development areas like user authentication, file uploads, database management, and API integration.",
         tech: [
-            { name: "React", icon: <FaReact /> },
-            { name: "JavaScript", icon: <FaJs /> },
-            { name: "Node.js", icon: <FaNodeJs /> },
-            { name: "Express.js", icon: <SiExpress /> },
-            { name: "MongoDB", icon: <SiMongodb /> },
-            { name: "Firebase", icon: <SiFirebase /> },
-            { name: "JWT", icon: <SiJsonwebtokens /> },
-            { name: "React Router", icon: <SiReactrouter /> },
+            { name: "React", icon: <FaReact />, color: "text-[#61DAFB]" },
+            { name: "JavaScript", icon: <FaJs />, color: "text-[#F7DF1E]" },
+            { name: "Node.js", icon: <FaNodeJs />, color: "text-[#339933]" },
+            { name: "Express.js", icon: <SiExpress />, color: "" },
+            { name: "MongoDB", icon: <SiMongodb />, color: "text-[#47A248]" },
+            { name: "Firebase", icon: <SiFirebase />, color: "text-[#FFCA28]" },
+            { name: "JWT", icon: <SiJsonwebtokens />, color: "text-[#00A3D9]" },
+            { name: "React Router", icon: <SiReactrouter />, color: "text-[#CA4245]" },
         ],
         liveLink: "https://b11a11-whereisit-site.web.app",
         githubLink: "https://github.com/Mahfujmazid47/whereisit-project",
@@ -80,14 +81,14 @@ const projects = [
         description:
             "A platform that helps individuals find freelancers for small tasks and freelancers to find work opportunities. Users can post tasks, bid on tasks, and connect with each other based on skills, budget, and deadlines.",
         tech: [
-            { name: "React", icon: <FaReact /> },
-            { name: "JavaScript", icon: <FaJs /> },
-            { name: "Node.js", icon: <FaNodeJs /> },
-            { name: "Express.js", icon: <SiExpress /> },
-            { name: "MongoDB", icon: <SiMongodb /> },
-            { name: "Firebase", icon: <SiFirebase /> },
-            { name: "JWT", icon: <SiJsonwebtokens /> },
-            { name: "React Router", icon: <SiReactrouter /> },
+            { name: "React", icon: <FaReact />, color: "text-[#61DAFB]" },
+            { name: "JavaScript", icon: <FaJs />, color: "text-[#F7DF1E]" },
+            { name: "Node.js", icon: <FaNodeJs />, color: "text-[#339933]" },
+            { name: "Express.js", icon: <SiExpress />, color: "" },
+            { name: "MongoDB", icon: <SiMongodb />, color: "text-[#47A248]" },
+            { name: "Firebase", icon: <SiFirebase />, color: "text-[#FFCA28]" },
+            { name: "JWT", icon: <SiJsonwebtokens />, color: "text-[#00A3D9]" },
+            { name: "React Router", icon: <SiReactrouter />, color: "text-[#CA4245]" },
         ],
         liveLink: "https://b11a10-freelance-side.web.app",
         githubLink: "https://github.com/Mahfujmazid47/freelance_site",
@@ -115,13 +116,13 @@ const ProjectsDetails = () => {
     const { id } = useParams();
     const project = projects.find((p) => p.id === id);
 
-      const [openSection, setOpenSection] = useState(null);
+    const [openSection, setOpenSection] = useState(null);
 
-  // Assuming you have 'project' from your params & projects array
+    // Assuming you have 'project' from your params & projects array
 
-  const toggleSection = (section) => {
-    setOpenSection(openSection === section ? null : section);
-  };
+    const toggleSection = (section) => {
+        setOpenSection(openSection === section ? null : section);
+    };
 
     if (!project) {
         return <div className="text-center py-20 text-red-500">Project not found.</div>;
@@ -180,16 +181,19 @@ const ProjectsDetails = () => {
                 </div>
 
                 <p data-aos="fade-up"
-                    data-aos-delay="300" className="text-lg text-gray-700 my-6">{project.description}</p>
+                    data-aos-delay="300" className="text-lg my-6">{project.description}</p>
 
                 <h2 data-aos="fade-up"
                     data-aos-delay="300" className="text-2xl font-semibold mb-3">Tech Stack</h2>
                 <div data-aos="fade-up"
                     data-aos-delay="400" className="flex flex-wrap gap-3 mb-6">
                     {project.tech.map((t, idx) => (
-                        <div key={idx} className={`flex items-center gap-2 px-3 py-1 rounded-full shadow-sm border`}>
-                            {t.icon}
-                            <span>{t.name}</span>
+                        <div
+                            key={idx}
+                            className={`flex items-center gap-2 px-3 py-1 rounded-full shadow-sm border `}
+                        >
+                            <span className={`${t.color} text-xl`}>{t.icon}</span>
+                            <span className="">{t.name}</span>
                         </div>
                     ))}
                 </div>
@@ -197,77 +201,75 @@ const ProjectsDetails = () => {
                 <div data-aos="fade-up"
                     data-aos-delay="500" className="flex gap-4 mb-6">
                     <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="btn button bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg text-white hover:scale-105 transition-transform">
-                        Live Demo
+                        Live Demo <FaArrowRightLong className="-rotate-30" />
                     </a>
                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="btn button btn-outline hover:text-white hover:bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg hover:scale-105 text-blue-500 transition-transform">
-                        GitHub
+                        <FaGithub size={20} /> GitHub Repo
                     </a>
                 </div>
 
                 {/* Challenges & Future Plans Accordion */}
-        <div className="mt-12 space-y-6">
-          {/* Challenges Faced */}
-          <div
-            className="border border-gray-300 rounded-lg shadow-sm"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <button
-              onClick={() => toggleSection("challenges")}
-              className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-xl rounded-t-lg transition"
-              aria-expanded={openSection === "challenges"}
-            >
-              Challenges Faced
-              {openSection === "challenges" ? (
-                <FaChevronUp className="text-gray-600" />
-              ) : (
-                <FaChevronDown className="text-gray-600" />
-              )}
-            </button>
-            <div
-              className={`px-6 pt-2 pb-6 bg-white rounded-b-lg transition-all duration-300 ease-in-out overflow-hidden ${
-                openSection === "challenges" ? "max-h-96" : "max-h-0"
-              }`}
-            >
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
-                {project.challenges.map((challenge, idx) => (
-                  <li key={idx}>{challenge}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+                <div className="mt-12 space-y-6">
+                    {/* Challenges Faced */}
+                    <div
+                        className="border border-gray-300 rounded-lg shadow-sm"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                    >
+                        <button
+                            onClick={() => toggleSection("challenges")}
+                            className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-xl rounded-t-lg transition"
+                            aria-expanded={openSection === "challenges"}
+                        >
+                            Challenges Faced
+                            {openSection === "challenges" ? (
+                                <FaChevronUp className="text-gray-600" />
+                            ) : (
+                                <FaChevronDown className="text-gray-600" />
+                            )}
+                        </button>
+                        <div
+                            className={`px-6 pt-2 pb-6 bg-white rounded-b-lg transition-all duration-300 ease-in-out overflow-hidden ${openSection === "challenges" ? "max-h-96" : "max-h-0"
+                                }`}
+                        >
+                            <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                {project.challenges.map((challenge, idx) => (
+                                    <li key={idx}>{challenge}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
 
-          {/* Future Plans */}
-          <div
-            className="border border-gray-300 rounded-lg shadow-sm"
-            data-aos="fade-up"
-            data-aos-delay="700"
-          >
-            <button
-              onClick={() => toggleSection("futurePlans")}
-              className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-xl rounded-t-lg transition-transform"
-              aria-expanded={openSection === "futurePlans"}
-            >
-              Future Plans
-              {openSection === "futurePlans" ? (
-                <FaChevronUp className="text-gray-600" />
-              ) : (
-                <FaChevronDown className="text-gray-600" />
-              )}
-            </button>
-            <div
-              className={`px-6 pt-2 pb-6 bg-white rounded-b-lg transition-all duration-300 ease-in-out overflow-hidden ${
-                openSection === "futurePlans" ? "max-h-96" : "max-h-0"
-              }`}
-            >
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
-                {project.futurePlans.map((plan, idx) => (
-                  <li key={idx}>{plan}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
+                    {/* Future Plans */}
+                    <div
+                        className="border border-gray-300 rounded-lg shadow-sm"
+                        data-aos="fade-up"
+                        data-aos-delay="700"
+                    >
+                        <button
+                            onClick={() => toggleSection("futurePlans")}
+                            className="w-full flex justify-between items-center px-6 py-4 text-left font-semibold text-xl rounded-t-lg transition-transform"
+                            aria-expanded={openSection === "futurePlans"}
+                        >
+                            Future Plans
+                            {openSection === "futurePlans" ? (
+                                <FaChevronUp className="text-gray-600" />
+                            ) : (
+                                <FaChevronDown className="text-gray-600" />
+                            )}
+                        </button>
+                        <div
+                            className={`px-6 pt-2 pb-6 bg-white rounded-b-lg transition-all duration-300 ease-in-out overflow-hidden ${openSection === "futurePlans" ? "max-h-96" : "max-h-0"
+                                }`}
+                        >
+                            <ul className="list-disc list-inside space-y-2 text-gray-700">
+                                {project.futurePlans.map((plan, idx) => (
+                                    <li key={idx}>{plan}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     );

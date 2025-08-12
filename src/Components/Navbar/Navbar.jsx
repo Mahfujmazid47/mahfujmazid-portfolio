@@ -1,4 +1,5 @@
 import React from "react";
+import { HiDownload } from "react-icons/hi";
 import { NavLink } from "react-router";
 import { Link } from "react-scroll";
 
@@ -65,8 +66,16 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <NavLink to="/" className="p-0 text-sm md:text-xl font-bold">
-        Mahfuj Mazid
+        <NavLink
+          to="/"
+          className="flex items-center gap-2 p-0 text-sm md:text-xl font-bold"
+        >
+          <img
+            src="https://i.ibb.co.com/0pzT96c3/small-size-profile-pic.jpg"
+            alt="Mahfuj Mazid Logo"
+            className="w-8 h-8 rounded-full object-contain"
+          />
+          Mahfuj Mazid
         </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -98,12 +107,12 @@ const Navbar = () => {
         </label>
 
         <a
-          href="/cv.pdf"
+          href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="btn text-white hover:scale-105 transition-transform bg-gradient-to-r from-sky-400 to-blue-600"
         >
-          Download CV
+          Resume <HiDownload size={15} />
         </a>
       </div>
     </div>
