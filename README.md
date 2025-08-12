@@ -1,5 +1,5 @@
 # Portfolio - Mahfuj Mazid
-
+## Live Link:- https://mahfujmazid-porfolio.netlify.app/ 
 
 
 
@@ -12,5 +12,7 @@
 - npm i react-responsive-carousel
 - npm install emailjs-com
 - npm install sweetalert2
+- npm i react-router
+- npm install swiper
 - 
 

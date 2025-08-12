@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 
 const Hero = () => {
@@ -43,18 +43,39 @@ const Hero = () => {
             >
               <FaLinkedin size={25} />
             </a>
+          
+            <a
+              href="https://linkedin.com/in/mahfujmazid"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" hover:text-blue-500 text-2xl transition-colors"
+            >
+              <FaFacebook size={25} />
+            </a>
+          
+
+            <a
+              href="https://linkedin.com/in/mahfujmazid"
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" hover:text-blue-500 text-2xl transition-colors"
+            >
+              <FaWhatsapp size={25} />
+            </a>
           </div>
 
 
           {/* Resume Button */}
-          <a data-aos="fade-up"
-          data-aos-delay="400"
+          <div data-aos="fade-up"
+          data-aos-delay="400">
+            <a 
             href="/resume.pdf"
             download
-            className="btn bg-gradient-to-r from-sky-400 to-blue-600 md:w-4/12 flex items-center gap-2 text-white hover:scale-105 transition-transform"
+            className="btn bg-gradient-to-r button from-sky-400 to-blue-600 md:w-4/12 flex items-center gap-2 text-white hover:scale-105 transition-transform"
           >
             <HiDownload className="text-lg" /> Download Resume
           </a>
+          </div>
         </div>
 
         {/* Right Content (Image) */}

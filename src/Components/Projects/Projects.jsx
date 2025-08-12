@@ -3,6 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { FaArrowLeft, FaArrowRight, FaReact, FaJs, FaNodeJs, FaStripe } from "react-icons/fa";
 import { SiFirebase, SiMongodb, SiExpress, SiReactrouter, SiJsonwebtokens } from "react-icons/si";
+import { Link } from "react-router";
 
 
 // Project data
@@ -123,7 +124,7 @@ const Projects = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg text-white hover:scale-105 transition-transform"
+                    className="btn button bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg text-white hover:scale-105 transition-transform"
                   >
                     Live Demo
                   </a>
@@ -131,10 +132,16 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline hover:text-white hover:bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg hover:scale-105 text-blue-500 transition-transform"
+                    className="btn button btn-outline hover:text-white hover:bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg hover:scale-105 text-blue-500 transition-transform"
                   >
                     GitHub
                   </a>
+                  <Link
+                    to={`/project_details/${project.id}`}
+                    className="btn button btn-outline hover:text-white hover:bg-gradient-to-r from-sky-400 to-blue-600 shadow-lg hover:scale-105 text-blue-500 transition-transform"
+                  >
+                    View Details
+                  </Link>
                 </div>
               </div>
 

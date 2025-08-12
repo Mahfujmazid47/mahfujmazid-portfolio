@@ -46,7 +46,7 @@ const skills = [
     icon: <SiFirebase className="text-[#FFCA28]" />,
   },
   {
-    name: "Tailwind CSS",
+    name: "Tailwind",
     icon: <SiTailwindcss className="text-[#38B2AC]" />,
   },
   {

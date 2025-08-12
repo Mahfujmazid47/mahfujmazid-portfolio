@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -38,7 +39,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar lg:px-46 bg-base-100 shadow-sm shadow-primary/35 fixed top-0 z-50 raleway-font bg-gradient-to-r from-primary/9 to-secondary/9">
+    <div className="navbar lg:px-46 bg-base-100 shadow-sm shadow-primary/35 fixed top-0 z-50 button bg-gradient-to-r from-primary/9 to-secondary/9">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -64,7 +65,9 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="p-0 text-sm md:text-xl font-bold">Mahfuj Mazid</a>
+        <NavLink to="/" className="p-0 text-sm md:text-xl font-bold">
+        Mahfuj Mazid
+        </NavLink>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
@@ -98,7 +101,7 @@ const Navbar = () => {
           href="/cv.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn text-white bg-gradient-to-r from-sky-400 to-blue-600"
+          className="btn text-white hover:scale-105 transition-transform bg-gradient-to-r from-sky-400 to-blue-600"
         >
           Download CV
         </a>
