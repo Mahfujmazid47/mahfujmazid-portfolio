@@ -31,11 +31,20 @@ const Navbar = () => {
           Experience
         </Link>
       </li> */}
+      
+      <li>
+        <Link to="education" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
+          Education
+        </Link>
+      </li>
+      
       <li>
         <Link to="contact" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           Contact
         </Link>
       </li>
+
+
     </>
   );
 

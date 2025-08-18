@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import Navbar from '../Components/Navbar/Navbar';
 import { Outlet } from 'react-router';
 import Footer from '../Components/Footer/Footer';
+import ScrollToTop from '../Components/ScrollToTop/ScrollToTop';
 
 const MainLayout = () => {
     return (
@@ -17,6 +18,8 @@ const MainLayout = () => {
             <footer>
                 <Footer></Footer>
             </footer>
+
+            <ScrollToTop />
         </>
     );
 };

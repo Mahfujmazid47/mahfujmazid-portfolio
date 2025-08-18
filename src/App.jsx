@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
+import Education from './Components/Education/Education';
 
  AOS.init({ duration: 1000})
 
@@ -27,6 +28,9 @@ function App() {
         </section>
         <section>
           <Projects></Projects>
+        </section>
+        <section>
+          <Education></Education>
         </section>
         <section>
           <Contact></Contact>
