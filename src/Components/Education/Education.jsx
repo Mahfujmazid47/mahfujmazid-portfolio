@@ -21,7 +21,7 @@ const Education = () => {
             <span className="text-sm ">2023 - Present</span>
             <p className="mt-2 ">
               Currently pursuing my{" "}
-              <span className="font-medium">Bachelor’s degree in Chemistry</span>{" "}
+              <span className="font-medium text-blue-500">Bachelor’s degree in Chemistry</span>{" "}
               at{" "}
               <span className="font-medium">National University, Bangladesh</span>.  
               I am in my <span className="font-medium">2nd Year</span> with a{" "}
