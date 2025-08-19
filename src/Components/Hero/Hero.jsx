@@ -45,7 +45,7 @@ const Hero = () => {
             </a>
           
             <a
-              href="https://github.com/Mahfujmazid47"
+              href="https://www.facebook.com/mahfuj.mazid.2024"
               target="_blank"
               rel="noopener noreferrer"
               className=" hover:text-blue-500 text-2xl transition-colors"
