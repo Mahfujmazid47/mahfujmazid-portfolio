@@ -69,8 +69,8 @@ const Hero = () => {
           <div data-aos="fade-up"
           data-aos-delay="400">
             <a 
-            href="/resume.pdf"
-            download
+            href="https://drive.google.com/file/d/1QM5BYbGtU842c6FYW8TeEZAar31aOtoa/view"
+            target="_blank"
             className="btn bg-gradient-to-r button from-sky-400 to-blue-600 md:w-4/12 flex items-center gap-2 text-white hover:scale-105 transition-transform"
           >
             <HiDownload className="text-lg" /> Download Resume

@@ -116,7 +116,7 @@ const Navbar = () => {
         </label>
 
         <a
-          href="/resume.pdf"
+          href="https://drive.google.com/file/d/1QM5BYbGtU842c6FYW8TeEZAar31aOtoa/view"
           target="_blank"
           rel="noopener noreferrer"
           className="btn text-white hover:scale-105 transition-transform bg-gradient-to-r from-sky-400 to-blue-600"
