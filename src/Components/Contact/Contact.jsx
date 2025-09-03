@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 
 const Contact = () => {
     const formRef = useRef();
-    const emailAddress = 'mahfujmazid47@gmail.com';
+    // const emailAddress = 'mahfujmazid47@gmail.com';
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -43,26 +43,26 @@ const Contact = () => {
 
 
 
-    const copyToClipboard = () => {
-        navigator.clipboard.writeText(emailAddress)
-            .then(() => {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Copied!',
-                    text: 'Email address has been copied to your clipboard.',
-                    showConfirmButton: false,
-                    timer: 1500
-                });
-            })
-            .catch(err => {
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Something went wrong. Could not copy the email.',
-                });
-                console.error('Could not copy text: ', err);
-            });
-    };
+    // const copyToClipboard = () => {
+    //     navigator.clipboard.writeText(emailAddress)
+    //         .then(() => {
+    //             Swal.fire({
+    //                 icon: 'success',
+    //                 title: 'Copied!',
+    //                 text: 'Email address has been copied to your clipboard.',
+    //                 showConfirmButton: false,
+    //                 timer: 1500
+    //             });
+    //         })
+    //         .catch(err => {
+    //             Swal.fire({
+    //                 icon: 'error',
+    //                 title: 'Oops...',
+    //                 text: 'Something went wrong. Could not copy the email.',
+    //             });
+    //             console.error('Could not copy text: ', err);
+    //         });
+    // };
 
     return (
         <section id="contact" className="bg-gradient-to-r from-primary/5 to-secondary/5 py-24 px-6 lg:px-20">
@@ -187,21 +187,21 @@ const Contact = () => {
                         </a>
 
                         {/* Email */}
-                        {/* <a
+                        <a
                             href="mailto:mahfujmazid47@gmail.com"
                             className="flex items-center gap-4 p-4 rounded-lg shadow-lg bg-gradient-to-r  from-primary/5 to-secondary/5 hover:scale-105 transition-transform"
                         >
                             <FaEnvelope className="text-red-500 text-3xl" />
                             <span className="font-semibold">mahfujmazid47@gmail.com</span>
-                        </a> */}
+                        </a>
 
-                        <div
+                        {/* <div
                             onClick={copyToClipboard}
                             className="flex items-center gap-4 p-4 rounded-lg shadow-lg bg-gradient-to-r  from-primary/5 to-secondary/5 hover:scale-105 transition-transform cursor-pointer"
                         >
                             <FaEnvelope className="text-red-500 text-3xl" />
                             <span className="font-semibold">{emailAddress}</span>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
