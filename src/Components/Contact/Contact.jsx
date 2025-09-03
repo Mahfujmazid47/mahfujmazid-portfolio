@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import { FaLinkedin, FaGithub, FaFacebook, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFacebook, FaWhatsapp, FaEnvelope, FaRegCopy } from "react-icons/fa";
 import Swal from "sweetalert2";
 
 const Contact = () => {
     const formRef = useRef();
-    // const emailAddress = 'mahfujmazid47@gmail.com';
+    const emailAddress = 'mahfujmazid47@gmail.com';
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -43,26 +43,26 @@ const Contact = () => {
 
 
 
-    // const copyToClipboard = () => {
-    //     navigator.clipboard.writeText(emailAddress)
-    //         .then(() => {
-    //             Swal.fire({
-    //                 icon: 'success',
-    //                 title: 'Copied!',
-    //                 text: 'Email address has been copied to your clipboard.',
-    //                 showConfirmButton: false,
-    //                 timer: 1500
-    //             });
-    //         })
-    //         .catch(err => {
-    //             Swal.fire({
-    //                 icon: 'error',
-    //                 title: 'Oops...',
-    //                 text: 'Something went wrong. Could not copy the email.',
-    //             });
-    //             console.error('Could not copy text: ', err);
-    //         });
-    // };
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(emailAddress)
+            .then(() => {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Copied!',
+                    text: 'Email address has been copied to your clipboard.',
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            })
+            .catch(err => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong. Could not copy the email.',
+                });
+                console.error('Could not copy text: ', err);
+            });
+    };
 
     return (
         <section id="contact" className="bg-gradient-to-r from-primary/5 to-secondary/5 py-24 px-6 lg:px-20">
@@ -189,11 +189,29 @@ const Contact = () => {
                         {/* Email */}
                         <a
                             href="mailto:mahfujmazid47@gmail.com"
-                            className="flex items-center gap-4 p-4 rounded-lg shadow-lg bg-gradient-to-r  from-primary/5 to-secondary/5 hover:scale-105 transition-transform"
+                            className="flex items-center justify-between gap-4 p-4 rounded-lg shadow-lg bg-gradient-to-r from-primary/5 to-secondary/5 hover:scale-105 transition-transform relative"
                         >
-                            <FaEnvelope className="text-red-500 text-3xl" />
-                            <span className="font-semibold">mahfujmazid47@gmail.com</span>
+                            <div className="flex items-center gap-4">
+                                <FaEnvelope className="text-red-500 text-3xl" />
+                                <span className="font-semibold">mahfujmazid47@gmail.com</span>
+                            </div>
+
+                            {/* Copy Button */}
+                            <div className="lg:tooltip" data-tip="Copy the Email">
+                                <button
+                                    onClick={copyToClipboard}
+                                    className="relative group hover:text-blue-600 cursor-pointer"
+                                >
+                                    <FaRegCopy className="text-xl" />
+
+                                    {/* Tooltip */}
+                                    {/* <span className="absolute cursor-pointer top-8 right-1/2 translate-x-1/2 px-2 py-1 text-xs rounded-md bg-gray-800 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                                    Copy the email
+                                </span> */}
+                                </button>
+                            </div>
                         </a>
+
 
                         {/* <div
                             onClick={copyToClipboard}

@@ -1,15 +1,39 @@
 import React from "react";
 import { HiDownload } from "react-icons/hi";
-import { NavLink } from "react-router";
-import { Link } from "react-scroll";
+import { NavLink, useLocation } from "react-router";
+import { Link, Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router";
 
 const Navbar = () => {
+
+  const location = useLocation();
   const links = (
     <>
       <li>
-        <Link to="home" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
-          Home
-        </Link>
+
+        {location.pathname !== "/" ? (
+          // যদি "/" এ না থাকে, তাহলে রুটে নিয়ে যাক
+          <RouterLink
+            to="/"
+            className=""
+          >
+            Home
+          </RouterLink>
+        ) : (
+          // যদি "/" এ থাকে, তাহলে smooth scroll করে home section এ যাক
+          <ScrollLink
+            to="home"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-70}
+            activeClass="bg-blue-500 font-semibold text-white rounded-full"
+            className="px-4 py-2 cursor-pointer"
+          >
+            Home
+          </ScrollLink>
+        )}
+
       </li>
       <li>
         <Link to="about" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
@@ -31,13 +55,13 @@ const Navbar = () => {
           Experience
         </Link>
       </li> */}
-      
+
       <li>
         <Link to="education" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           Education
         </Link>
       </li>
-      
+
       <li>
         <Link to="contact" smooth={true} duration={500} spy={true} offset={-70} activeClass="bg-blue-500 font-semibold text-white rounded-full">
           Contact
